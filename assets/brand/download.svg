@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="140" viewBox="0 0 520 140" role="img" aria-label="HostUz logo (Dark Tech)">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6ee7ff"></stop>
+      <stop offset="1" stop-color="#a78bfa"></stop>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"></stop>
+      <stop offset="1" stop-color="#6ee7ff"></stop>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="b"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Mark -->
+  <g transform="translate(28,32)">
+    <rect x="0" y="0" width="76" height="76" rx="18" fill="url(#g1)" opacity="0.92"></rect>
+    <rect x="7" y="7" width="62" height="62" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)"></rect>
+
+    <!-- Circuit lines -->
+    <path d="M18 24 H34 M34 24 V18" stroke="rgba(255,255,255,0.45)" stroke-width="2.2" stroke-linecap="round"></path>
+    <path d="M58 54 H42 M42 54 V60" stroke="rgba(255,255,255,0.45)" stroke-width="2.2" stroke-linecap="round"></path>
+    <circle cx="34" cy="18" r="3" fill="rgba(255,255,255,0.65)"></circle>
+    <circle cx="42" cy="60" r="3" fill="rgba(255,255,255,0.65)"></circle>
+
+    <!-- HU monogram -->
+    <text x="38" y="49" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="30" font-weight="900" letter-spacing="-1" fill="rgba(255,255,255,0.95)" filter="url(#glow)">HU</text>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(130,52)">
+    <text x="0" y="32" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="44" font-weight="900" letter-spacing="-1.2" fill="rgba(255,255,255,0.92)">Host</text>
+
+    <text x="122" y="32" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="44" font-weight="900" letter-spacing="-1.2" fill="url(#g2)">Uz</text>
+
+    <text x="0" y="62" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="14" font-weight="650" fill="rgba(255,255,255,0.62)">Fast. Secure. Always-on hosting infrastructure.</text>
+  </g>
+</svg>
