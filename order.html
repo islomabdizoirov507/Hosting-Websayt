@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang='uz'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>HostUz - Buyurtma berish</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
+    <meta name='description' content='HostUz xizmatlari uchun buyurtma berish: hosting, VPS va domenlar. Tezkor va qulay buyurtma shakli.' />
+</head>
+<body>
+    <header class='header container' role='banner'>
+        <div class='navigatsiya'>
+            <a class='logo__brand' href='index.html' aria-label='HostUz'><span class='logo' aria-hidden='true'>HostUz</span></a>
+            <input type='checkbox' id='menuToggle' aria-label='Menyuni ochish' aria-controls='primary-navigation' />
+            <label for='menuToggle' class='menyu' aria-label='Menyuni ochish/yopish'>
+            <span></span>
+            </label>
+            <nav class='navigatsiya__links' id='primary-navigation' aria-label='Asosiy menyu'>
+                <a href='index.html'>Bosh sahifa</a>
+                <a href='hosting.html'>Hosting</a>
+                <a href='vps.html'>VPS</a>
+                <a href='domains.html'>Domenlar</a>
+                <a href='contact.html'>Bog'lanish</a>
+                <a href='order.html' aria-current='page'>Buyurtma berish</a>
+                <a href='about.html'>Biz haqimizda</a>
+            </nav>
+            <div class='navigatsiya__action'>
+                <a class='button__order' href='order.html'>Buyurtma berish</a>
+                <a class='button__login' href='login.html' title=''>Mijozning sahifasi</a>
+            </div>
+        </div>
+        <h1 class='welcome'>Buyurtma berish</h1>
+    </header>
+    <main class='container main__content main-content' role='main'>
+        <section class='hero'>
+            <h2>Buyurtmangizni bir necha bosqichda yuboring</h2>
+            <p>Hosting, VPS yoki domen xizmatini tanlang va loyihangizni tezkor ishga tushiring. Bizning jamoa buyurtmani qabul qilib, siz bilan bog'lanadi.</p>
+        </section>
+        <section class='features'>
+            <h2>Buyurtma jarayoni</h2>
+            <ul class='feature-list'>
+                <li>Xizmat turini tanlang</li>
+                <li>Tarif va muddatni belgilang</li>
+                <li>Kontakt ma'lumotlarini kiriting</li>
+                <li>Buyurtmani yuboring</li>
+            </ul>
+        </section>
+        <section class='contact-form'>
+            <h2>Buyurtma shakli</h2>
+            <p>Quyidagi shaklni to'ldiring, biz siz bilan tez orada bog'lanamiz.</p>
+            <form action='submit_order' method='post' aria-label='Buyurtma shakli' class='form__info'>
+                <label for='fullName'>Ism va familiya:</label>
+                <input type='text' id='fullName' name='fullName' autocomplete='name' required />
+
+                <label for='email'>Email manzilingiz:</label>
+                <input type='email' id='email' name='email' autocomplete='email' required />
+
+                <label for='phone'>Telefon raqami:</label>
+                <input type='tel' id='phone' name='phone' autocomplete='tel' placeholder='+998 90 123 45 67' required />
+
+                <label for='service'>Xizmat turi:</label>
+                <select id='service' name='service' required>
+                    <option value='' disabled selected>Tanlang</option>
+                    <option value='shared'>Shared Hosting</option>
+                    <option value='vps'>VPS Hosting</option>
+                    <option value='domain'>Domen ro'yxatdan o'tkazish</option>
+                </select>
+
+                <label for='plan'>Tarif:</label>
+                <select id='plan' name='plan' required>
+                    <option value='' disabled selected>Tanlang</option>
+                    <option value='starter'>Starter</option>
+                    <option value='business'>Biznes</option>
+                    <option value='pro'>Pro</option>
+                    <option value='basic'>Asosiy</option>
+                    <option value='standard'>Standart</option>
+                    <option value='premium'>Premium</option>
+                </select>
+
+                <label for='domainName'>Domen (agar kerak bo'lsa):</label>
+                <input type='text' id='domainName' name='domainName' placeholder='example.uz' />
+
+                <fieldset>
+                    <legend>To'lov muddati</legend>
+                    <label for='billing-monthly'>
+                        <input type='radio' id='billing-monthly' name='billing' value='monthly' checked />
+                        Oylik
+                    </label>
+                    <label for='billing-yearly'>
+                        <input type='radio' id='billing-yearly' name='billing' value='yearly' />
+                        Yillik
+                    </label>
+                </fieldset>
+
+                <label for='notes'>Izohlar:</label>
+                <textarea id='notes' name='notes' rows='4' placeholder='Qo&#39;shimcha talablaringizni yozing'></textarea>
+
+                <label for='terms'>
+                    <input type='checkbox' id='terms' name='terms' required />
+                    Xizmat ko'rsatish shartlariga roziman
+                </label>
+
+                <button type='submit' class='button__send'>Buyurtma yuborish</button>
+            </form>
+        </section>
+        <section class='pricing-info'>
+            <h2>Narxlar haqida eslatma</h2>
+            <p>Tariflar xizmat turiga va to'lov muddatiga qarab farq qiladi. Yakuniy summa buyurtma tasdiqlanganda ko'rsatiladi.</p>
+            <div class='pricing-items'>
+                <h3>Qo'shimcha xizmatlar</h3>
+                <ul>
+                    <li>Bepul SSL sertifikati</li>
+                    <li>Sayt migratsiyasi bo'yicha yordam</li>
+                    <li>24/7 qo'llab-quvvatlash</li>
+                </ul>
+            </div>
+        </section>
+        <section class='contact-info'>
+            <h2>Yordam kerakmi?</h2>
+            <p>Buyurtma bo'yicha savollar uchun biz bilan bog'laning:</p>
+            <ul>
+                <li>Email: <a href='mailto:info@hostuz.com'>info@hostuz.com</a></li>
+                <li>Telefon: +998 71 123 45 67</li>
+            </ul>
+        </section>
+    </main>
+    <footer class='footer container' role='contentinfo'>
+        <a href='index.html' class='logo__brand' aria-label='HostUz'><span class='logo' aria-hidden='true'>HostUz</span></a>
+        <nav class='footer-links' aria-label='Footer menyu'>
+            <a href='index.html'>Bosh sahifa</a>
+            <a href='hosting.html'>Hosting</a>
+            <a href='vps.html'>VPS</a>
+            <a href='domains.html'>Domenlar</a>
+            <a href='contact.html'>Bog'lanish</a>
+            <a href='order.html'>Buyurtma berish</a>
+            <a href='about.html'>Biz haqimizda</a>
+        </nav>
+        <p>&copy; 2025 HostUz. Barcha huquqlar himoyalangan.</p>
+    </footer>
+</body>
+</html>
