@@ -1,4 +1,4 @@
-# HostUz (Demo) — HTML/CSS Hosting Website
+﻿# HostUz (Demo) - HTML/CSS Hosting Website
 
 Bu loyiha Internet Hosting kompaniyasi uchun marketing websayt demo versiyasi.
 
@@ -8,12 +8,12 @@ Bu loyiha Internet Hosting kompaniyasi uchun marketing websayt demo versiyasi.
 
 ## Sahifalar
 
-- index.html — Home (value proposition, CTA, pricing preview)
-- hosting.html — Hosting paketlar
-- vps.html — VPS paketlar
-- domains.html — Domenlar (demo search UI)
-- about.html — Kompaniya haqida
-- contact.html — Aloqa (demo form)
+- index.html - Home (value proposition, CTA, pricing preview)
+- hosting.html - Hosting paketlar
+- vps.html - VPS paketlar
+- domains.html - Domenlar (demo search UI)
+- about.html - Kompaniya haqida
+- contact.html - Aloqa (demo form)
 - order.html - Buyurtmalar uchun (demo form)
 - login.html - Ro'yxatdan otish (demo form)
 
