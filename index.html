@@ -1,159 +1,113 @@
-<!DOCTYPE html>
-<html lang='uz'>
+﻿<!DOCTYPE html>
+<html lang="uz">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HostUz - Bosh sahifa</title>
-    <meta name='description' content='Shared hosting, VPS va domen xizmatlari. NVMe saqlash, 99.9% ish vaqti, 24/7 qo&#39;llab-quvvatlash.' />
-    <link rel='stylesheet' href='C:\Users\Islom.Abdizoirov\Desktop\FullStack Phyton\Hosting-Websayt/style.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
+    <link rel="icon" href="assets/brand/download.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaMxtu1+rA4IB+BZhA3FfRTh3PBFsdxU+qYV+0UjB+vJv39VCArlHw5qYOuVYA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta name="description" content="HostUz rasmiy veb-saytiga xush kelibsiz. Yuqori sifatli hosting, VPS va domen ro'yxatga olish xizmatlarini taklif etamiz.">
 </head>
 <body>
-    <nav class='navigatsiya container' role='navigation' aria-label='Asosiy navigatsiya'>
-        <div class='navigatsiya'>
+    <header class="header" role="banner">
+        <div class="navigatsiya container">
             <a class="brand" href="index.html" aria-label="HostUz Bosh sahifa">
-            <span class="logo logo-brand" aria-hidden="true">
-            <img src="assets/brand/download.svg" class="logo-brand__image" alt="">
-            </span><span>HostUz</span>
+                <span class="logo logo-brand" aria-hidden="true">
+                    <img src="assets/brand/download.svg" class="logo-brand__image" alt="HostUz logotipi">
+                </span>
+                <span>HostUz</span>
             </a>
-
-            <input type='checkbox' id='menuToggle' aria-label='Menyuni ochish' aria-controls='primary-navigation' />
-            <label for='menuToggle' class='menyu' aria-label='Menyuni ochish/yopish'>
-            <span></span>
+            <input type="checkbox" id="menuToggle" aria-label="Menyuni ochish" aria-controls="primary-navigation">
+            <label for="menuToggle" class="menyu" aria-label="Menyuni ochish/yopish">
+                <span></span>
             </label>
-            <nav class='navigatsiya__links' id='primary-navigation' aria-label='Asosiy menyu'>
-                <a href='index.html' aria-current='page'>Bosh sahifa</a>
-                <a href='hosting.html'>Hosting</a>
-                <a href='vps.html'>VPS</a>
-                <a href='domains.html'>Domenlar</a>
-                <a href='contact.html'>Bog'lanish</a>
-                <a href='order.html'>Buyurtma berish</a>
-                <a href='about.html'>Biz haqimizda</a>
+            <nav class="navigatsiya__links" id="primary-navigation" aria-label="Asosiy menyu">
+                <a href="index.html" aria-current="page">Bosh sahifa</a>
+                <a href="pricing.html">Xizmatlar</a>
+                <a href="contact.html">Bog'lanish</a>
+                <a href="about.html">Biz haqimizda</a>
+                <a href="order.html">Buyurtma berish</a>
             </nav>
-            <div class='navigatsiya__action'>
-                <a class='button__order' href='order.html'>Buyurtma berish</a>
-                <a class='button__login' href='login.html' title=''>Mijozning sahifasi</a>
-            </div>
         </div>
-    </nav>
-    <header class='header container' role='banner'>
-        <h1 class='welcome'>HostUzga xush kelibsiz</h1>
-        <p class='tagline'>Ishonchli va tezkor hosting yechimlari bilan onlayn mavjudligingizni oshiring.</p>
     </header>
-    <main class='container main__content main-content' role='main'>
-        <section class='hero'>
-            <h2>Sizning ishonchli hosting hamkoringiz</h2>
-            <p>HostUz bilan shared hosting, VPS va domen xizmatlarini tezkor va xavfsiz ishga tushiring. NVMe saqlash, 99.9% ish vaqti kafolati va 24/7 qo'llab-quvvatlash sizga barqarorlik beradi.</p>
-            <a class='button__order' href='order.html'>Buyurtma berishni boshlash</a>
-        </section>
-        <section class='features'>
-            <h2>Nega HostUz?</h2>
-            <ul class='feature-list'>
-                <li>Yuqori tezlikdagi NVMe saqlash</li>
-                <li>99.9% ish vaqti kafolati</li>
-                <li>24/7 qo'llab-quvvatlash</li>
-                <li>Qulay boshqaruv paneli</li>
-                <li>Moslashuvchan va arzon tariflar</li>
-            </ul>
-        </section>
-        <section class='services'>
-            <h2>Asosiy xizmatlar</h2>
-            <p>Har bir loyiha uchun mos yechimni tanlang va rivojlaning.</p>
-            <div class='service-item'>
-                <h3>Shared Hosting</h3>
-                <p>Ishonchli va arzon hosting yechimlari kichik va o'rta loyihalar uchun.</p>
-                <a href='hosting.html' class='button__description'>Batafsil</a>
-            </div>
-            <div class='service-item'>
-                <h3>VPS Hosting</h3>
-                <p>Quvvatli VPS hosting, to'liq root kirish va kengaytirish imkoniyatlari bilan.</p>
-                <a href='vps.html' class='button__description'>Batafsil</a>
-            </div>
-            <div class='service-item'>
-                <h3>Domen ro'yxatdan o'tkazish</h3>
-                <p>Domeningizni bizda ro'yxatdan o'tkazing va onlayn loyihani boshlang.</p>
-                <a href='domains.html' class='button__description'>Batafsil</a>
-            </div>
-            <div class='service-item'>
-                <h3>24/7 Qo'llab-quvvatlash</h3>
-                <p>Mijozlarimiz uchun doimiy yordam va texnik maslahatlardan foydalaning.</p>
-                <a href='contact.html' class='button__description'>Batafsil</a>
-            </div>
-            <aside class='promo-banner'>
-                <h3>Maxsus taklif!</h3>
-                <p>Yangi mijozlar uchun birinchi oyda 20% chegirma. Bugun ro'yxatdan o'ting va tejang.</p>
-                <a href='order.html' class='button__order'>Hozir buyurtma berish</a>
-            </aside>
-        </section>
-        <section class='testimonials'>
-            <h2>Mijozlarimiz nima deydi</h2>
-            <div class='testimonial-item'>
-                <p>&quot;HostUz bilan ishlash juda ajoyib. Ularning hosting xizmatlari ishonchli va qo'llab-quvvatlash jamoasi juda yordam beradi.&quot;</p>
-                <span>- Ali V.</span>
-            </div>
-            <div class='testimonial-item'>
-                <p>&quot;Mening veb-saytim HostUz VPS-da ajoyib ishlaydi. Tezlik va barqarorlik juda yaxshi.&quot;</p>
-                <span>- Leyla M.</span>
+    <main class="main__content">
+        <section class="hero container">
+            <h1>HostUz ga xush kelibsiz</h1>
+            <p>Yuqori sifatli hosting, VPS va domen ro'yxatga olish xizmatlarini taklif etamiz.</p>
+            <div class="hero__actions">
+                <a href="pricing.html" class="button__order-hero">Xizmatlarni ko'rish</a>
+                <a href="order.html" class="button__ghost">Buyurtma berish</a>
             </div>
         </section>
-        <section class='call-to-action'>
-            <h2>Bugun HostUzga qo'shiling</h2>
-            <p>Eng yaxshi hosting tajribasini boshlash uchun hozir buyurtma bering.</p>
-            <p>Tariflar va xizmatlarimiz haqida batafsil ma'lumot oling.</p>
-            <div class='pricing-info'>
-                <h3>Starter</h3>
-                <p>$3.99/oydan boshlab<span>7 kun bepul sinov</span></p>
-                <ul>
-                    <li>1 veb-sayt</li>
-                    <li>50 GB NVMe saqlash</li>
-                    <li>Cheklanmagan trafik</li>
-                    <li>Bepul SSL sertifikati</li>
-                </ul>
-                <a href='order.html' class='btn btn-secondary button__order'>Buyurtma berish</a>
+        <section class="features container">
+            <div class="feature">
+                <i class="fa-solid fa-server fa-3x" aria-hidden="true"></i>
+                <h2>Yuqori sifatli hosting</h2>
+                <p>Tez va ishonchli hosting echimlari bilan veb-saytingizni yuqori darajada saqlang.</p>
             </div>
-            <div class='pricing-info'>
-                <h3>Business</h3>
-                <p>$7.99/oydan boshlab<span>7 kun bepul sinov</span></p>
-                <ul>
-                    <li>10 veb-sayt</li>
-                    <li>150 GB NVMe saqlash</li>
-                    <li>Cheklanmagan trafik</li>
-                    <li>Bepul SSL sertifikati</li>
-                    <li>24/7 qo'llab-quvvatlash</li>
-                </ul>
-                <a href='order.html' class='button__order'>Buyurtma berish</a>
+            <div class="feature">
+                <i class="fa-solid fa-cloud fa-3x" aria-hidden="true"></i>
+                <h2>VPS xizmatlari</h2>
+                <p>Moslashuvchan va kuchli VPS serverlari bilan biznesingizni rivojlantiring.</p>
             </div>
-            <div class='pricing-info'>
-                <h3>Pro</h3>
-                <p>$12.99/oydan boshlab<span>7 kun bepul sinov</span></p>
-                <ul>
-                    <li>Cheksiz veb-saytlar</li>
-                    <li>Cheklanmagan NVMe saqlash</li>
-                    <li>Cheklanmagan trafik</li>
-                    <li>Bepul SSL sertifikati</li>
-                    <li>24/7 qo'llab-quvvatlash</li>
-                    <li>Maxsus IP manzili</li>
-                </ul>
-                <a href='order.html' class='button__order'>Buyurtma berish</a>
+            <div class="feature">
+                <i class="fa-solid fa-globe fa-3x" aria-hidden="true"></i>
+                <h2>Domen ro'yxatga olish</h2>
+                <p>O'zingizning onlayn mavjudligingizni boshlash uchun mukammal domen nomini tanlang.</p>
             </div>
-            <div class='pricing-disclaimer'>
-                <p>* Narxlar yillik reja uchun ko'rsatilgan. Soliqlar va qo'shimcha to'lovlar qo'llanilishi mumkin.</p>
+        </section>
+        <section class="pricing second__content container">
+            <h2>Xizmatlarimiz narxlari</h2>
+            <div class="pricing__cards">
+                <div class="pricing__card">
+                    <h3>Basic Hosting</h3>
+                    <p class="price">$3.99/oy</p>
+                    <ul>
+                        <li>10 GB SSD saqlash</li>
+                        <li>100 GB trafik</li>
+                        <li>Bepul SSL sertifikati</li>
+                    </ul>
+                    <a href="pricing.html" class="button__order">Buyurtma berish</a>
+                </div>
+                <div class="pricing__card">
+                    <h3>Pro VPS</h3>
+                    <p class="price">$19.99/oy</p>
+                    <ul>
+                        <li>4 CPU yadrosi</li>
+                        <li>8 GB RAM</li>
+                        <li>200 GB SSD saqlash</li>
+                    </ul>
+                    <a href="pricing.html" class="button__order">Buyurtma berish</a>
+                </div>
+                <div class="pricing__card">
+                    <h3>Domen ro'yxatga olish</h3>
+                    <p class="price">$12.99/yil</p>
+                    <ul>
+                        <li>.com, .net, .org va boshqalar</li>
+                        <li>Oson boshqaruv paneli</li>
+                        <li>Bepul WHOIS maxfiyligi</li>
+                    </ul>
+                    <a href="pricing.html" class="button__order">Buyurtma berish</a>
+                </div>
             </div>
-            <a href='hosting.html' class='button__description'>Batafsil tariflar</a>
         </section>
     </main>
-    <footer class='footer container' role='contentinfo'>
-        <a href='index.html' class='brand logo__brand' aria-label='HostUz'><span class='logo' aria-hidden='true'>HostUz</span></a>
-        <nav class='footer-links' aria-label='Footer menyu'>
-            <a href='index.html'>Bosh sahifa</a>
-            <a href='hosting.html'>Hosting</a>
-            <a href='vps.html'>VPS</a>
-            <a href='domains.html'>Domenlar</a>
-            <a href='contact.html'>Bog'lanish</a>
-            <a href='order.html'>Buyurtma berish</a>
-            <a href='about.html'>Biz haqimizda</a>
-        </nav>
-        <p>&copy; 2025 HostUz. Barcha huquqlar himoyalangan.</p>
+    <footer class="footer" role="contentinfo">
+        <div class="footer__content container">
+            <a href="index.html" class="logo__brand" aria-label="HostUz">
+                <span class="logo" aria-hidden="true">HostUz</span>
+            </a>
+            <img src="assets/brand/download.svg" class="logo-brand__image footer__logo" alt="HostUz logotipi">
+            <nav class="footer__links" aria-label="Footer menyu">
+                <a href="index.html" aria-current="page">Bosh sahifa</a>
+                <a href="pricing.html">Xizmatlar</a>
+                <a href="contact.html">Bog'lanish</a>
+                <a href="about.html">Biz haqimizda</a>
+                <a href="order.html">Buyurtma berish</a>
+            </nav>
+            <p>&copy; 2026 HostUz. Barcha huquqlar himoyalangan.</p>
+        </div>
     </footer>
 </body>
 </html>

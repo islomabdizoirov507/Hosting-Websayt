@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HostUz - Bog'lanish</title>
+    <title>HostUz - Buyurtma berish</title>
     <link rel="icon" href="assets/brand/download.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaMxtu1+rA4IB+BZhA3FfRTh3PBFsdxU+qYV+0UjB+vJv39VCArlHw5qYOuVYA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <meta name="description" content="HostUz bilan bog'laning. Savollaringiz bormi? Biz bilan bog'lanish uchun ushbu sahifadan foydalaning.">
+    <meta name="description" content="HostUz xizmatlarini buyurtma qiling. Yuqori sifatli hosting, VPS va domen ro'yxatga olish xizmatlaridan foydalaning.">
 </head>
 <body>
     <header class="header" role="banner">
@@ -25,36 +25,39 @@
             <nav class="navigatsiya__links" id="primary-navigation" aria-label="Asosiy menyu">
                 <a href="index.html">Bosh sahifa</a>
                 <a href="pricing.html">Xizmatlar</a>
-                <a href="contact.html" aria-current="page">Bog'lanish</a>
+                <a href="contact.html">Bog'lanish</a>
                 <a href="about.html">Biz haqimizda</a>
-                <a href="order.html">Buyurtma berish</a>
+                <a href="order.html" aria-current="page">Buyurtma berish</a>
             </nav>
         </div>
     </header>
     <main class="main__content">
-        <section class="contact__section container">
-            <h1>Biz bilan bog'laning</h1>
-            <p>Agar savollaringiz bo'lsa yoki yordam kerak bo'lsa, iltimos, quyidagi shakl orqali biz bilan bog'laning:</p>
-            <form class="contact__form" action="#" method="post">
+        <section class="order__section container">
+            <h1>Xizmatlarni buyurtma qiling</h1>
+            <p>Quyidagi shakl orqali HostUz xizmatlarini buyurtma qilishingiz mumkin. Iltimos, kerakli ma'lumotlarni to'ldiring:</p>
+            <form class="order__form" action="#" method="post">
+                <label for="service">Xizmat turi:</label>
+                <select id="service" name="service" required>
+                    <option value="hosting">Hosting</option>
+                    <option value="vps">VPS</option>
+                    <option value="domain">Domen ro'yxatga olish</option>
+                </select>
                 <label for="name">Ismingiz:</label>
                 <input type="text" id="name" name="name" required>
-
+                <label for="surname">Familiyangiz:</label>
+                <input type="text" id="surname" name="surname" required>
+                <label for="company">Kompaniya nomi (agar mavjud bo'lsa):</label>
+                <input type="text" id="company" name="company">
+                <label for="phone">Telefon raqamingiz:</label>
+                <input type="tel" id="phone" name="phone" required>
                 <label for="email">Email manzilingiz:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Xabaringiz:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="details">Qo'shimcha ma'lumotlar:</label>
+                <textarea id="details" name="details" rows="5"></textarea>
 
-                <button type="submit" class="button__submit">Yuborish</button>
+                <button type="submit" class="button__submit">Buyurtma berish</button>
             </form>
-        </section>
-        <section class="contact__details container">
-            <h2>Kontakt ma'lumotlari</h2>
-            <ul>
-                <li>Email: <a href="mailto:info@hostuz.com">info@hostuz.com</a></li>
-                <li>Telefon: +998 71 123 45 67</li>
-                <li>Manzil: Toshkent, O'zbekiston</li>
-            </ul>
         </section>
     </main>
     <footer class="footer" role="contentinfo">
@@ -66,9 +69,9 @@
             <nav class="footer__links" aria-label="Footer menyu">
                 <a href="index.html">Bosh sahifa</a>
                 <a href="pricing.html">Xizmatlar</a>
-                <a href="contact.html" aria-current="page">Bog'lanish</a>
+                <a href="contact.html">Bog'lanish</a>
                 <a href="about.html">Biz haqimizda</a>
-                <a href="order.html">Buyurtma berish</a>
+                <a href="order.html" aria-current="page">Buyurtma berish</a>
             </nav>
             <p>&copy; 2026 HostUz. Barcha huquqlar himoyalangan.</p>
         </div>
