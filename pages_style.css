@@ -1,0 +1,178 @@
+/* HostUz — Inner pages styles (pricing/order/contact/about) */
+
+/* page hero */
+.page-hero{
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.page-hero__media{ position:absolute; inset:0; z-index:0; }
+.page-hero__bg{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.03);
+}
+.page-hero__overlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(900px 520px at 50% 20%, rgba(77,227,255,.10), transparent),
+    linear-gradient(180deg, rgba(5,8,16,.40), rgba(5,8,16,.84));
+  z-index:1;
+}
+.page-hero__content{
+  position: relative;
+  z-index:2;
+  text-align:center;
+  width:min(980px, calc(100% - 2*var(--gutter)));
+  margin-inline:auto;
+  padding-block: clamp(2.6rem, 7vh, 4.6rem);
+}
+.page-hero__title{
+  margin:0;
+  font-size: clamp(2rem, 3.9vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -.03em;
+}
+.page-hero__subtitle{
+  margin:.8rem auto 0;
+  max-width: 70ch;
+  color: rgba(255,255,255,.80);
+  font-size: clamp(1.02rem, 1.25vw, 1.25rem);
+}
+.page-hero__actions{
+  margin-top: 1.4rem;
+  display:flex;
+  justify-content:center;
+  gap: 1rem;
+  flex-wrap:wrap;
+}
+.page-hero__actions .btn{ min-width: 220px; }
+
+/* Pricing tabs */
+.tabs{
+  display: grid;
+  gap: 1.2rem;
+}
+.tabs input{ position:absolute; opacity:0; pointer-events:none; }
+.tabs__bar{
+  display:flex;
+  gap:.7rem;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.tabs__btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.75rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  font-weight: 900;
+  color: rgba(255,255,255,.85);
+  cursor:pointer;
+  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+.tabs__btn:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.22); }
+
+#tab-shared:checked ~ .tabs__bar label[for="tab-shared"],
+#tab-vps:checked ~ .tabs__bar label[for="tab-vps"]{
+  border-color: rgba(77,227,255,.45);
+  background: linear-gradient(90deg, rgba(77,227,255,.14), rgba(79,107,255,.14));
+  color: rgba(255,255,255,.95);
+}
+
+.tabs__panels{ display:block; }
+.tabs__panel{ display:none; }
+#tab-shared:checked ~ .tabs__panels .tabs__panel--shared{ display:block; }
+#tab-vps:checked ~ .tabs__panels .tabs__panel--vps{ display:block; }
+
+.price-grid{
+  display:grid;
+  gap: clamp(1rem, 2vw, 1.6rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.price-card{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--r);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+  position: relative;
+}
+.price-card--featured{
+  border-color: rgba(77,227,255,.30);
+  box-shadow: 0 22px 70px rgba(0,0,0,.5);
+  transform: translateY(-4px);
+}
+.price-card h3{ margin:0; font-size: 1.2rem; letter-spacing: -.01em; }
+.price-card .muted{ margin:.45rem 0 0; }
+.price-card__price{
+  margin: .85rem 0 0;
+  font-weight: 900;
+  font-size: clamp(1.8rem, 2.6vw, 2.2rem);
+}
+.price-card__price span{ color: rgba(77,227,255,.95); }
+.price-card ul{ margin: .9rem 0 0; padding-left: 1.1rem; color: rgba(255,255,255,.78); }
+.price-card li{ margin: .35rem 0; }
+.price-card .btn{ margin-top: 1.1rem; }
+
+/* Comparison table */
+.table-wrap{
+  overflow:auto;
+  border-radius: var(--r);
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.22);
+}
+.compare-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+.compare-table th, .compare-table td{
+  padding: .95rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+  text-align: left;
+  color: rgba(255,255,255,.84);
+}
+.compare-table th{
+  background: rgba(255,255,255,.05);
+  font-weight: 900;
+  color: rgba(255,255,255,.92);
+}
+.compare-table tr:hover td{ background: rgba(255,255,255,.03); }
+
+/* Split layout for forms/about */
+.split{
+  display:grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(1rem, 2.6vw, 2rem);
+  align-items: start;
+}
+.side{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--r);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-soft);
+}
+.side h3{ margin:0; font-size: 1.15rem; }
+.side ul{ margin:.8rem 0 0; padding-left: 1.1rem; color: rgba(255,255,255,.78); }
+.side li{ margin:.35rem 0; }
+
+.info-cards .card__inner{ min-height: 170px; }
+
+/* Responsive (desktop-first) */
+@media (max-width: 1024px){
+  .price-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .split{ grid-template-columns: 1fr; }
+  .price-card--featured{ transform:none; }
+}
+@media (max-width: 680px){
+  .price-grid{ grid-template-columns: 1fr; }
+  .page-hero__actions .btn{ min-width: 100%; }
+}

@@ -4,102 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HostUz - Biz haqimizda</title>
+    <meta name="description" content="HostUz rasmiy veb-saytiga xush kelibsiz. Yuqori sifatli hosting, VPS va domen ro'yxatga olish xizmatlarini taklif etamiz.">
     <link rel="icon" href="assets/brand/download.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaMxtu1+rA4IB+BZhA3FfRTh3PBFsdxU+qYV+0UjB+vJv39VCArlHw5qYOuVYA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <meta name="description" content="HostUz haqida ko'proq bilib oling. Bizning missiyamiz, qadriyatlarimiz va jamoamiz bilan tanishing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="common_styles.css">
+    <link rel="stylesheet" href="pages_style.css">   
 </head>
 <body>
+    <!-- Header -->
     <header class="header" role="banner">
-        <div class="navigatsiya container">
-            <a class="brand" href="index.html" aria-label="HostUz Bosh sahifa">
-                <span class="logo logo-brand" aria-hidden="true">
-                    <img src="assets/brand/download.svg" class="logo-brand__image" alt="HostUz logotipi">
-                </span>
-                <span>HostUz</span>
-            </a>
-            <input type="checkbox" id="menuToggle" aria-label="Menyuni ochish" aria-controls="primary-navigation">
-            <label for="menuToggle" class="menyu" aria-label="Menyuni ochish/yopish">
-                <span></span>
-            </label>
-            <nav class="navigatsiya__links" id="primary-navigation" aria-label="Asosiy menyu">
-                <a href="index.html">Bosh sahifa</a>
-                <a href="pricing.html">Xizmatlar</a>
-                <a href="contact.html">Bog'lanish</a>
-                <a href="about.html" aria-current="page">Biz haqimizda</a>
-                <a href="order.html">Buyurtma berish</a>
-            </nav>
-        </div>
+     <div class="container header__inner">
+          <a class="brand" href="index.html" aria-label="HostUz Bosh sahifa">
+              <img src="assets/brand/download.svg" class="brand__logo" alt="HostUz logotipi" />
+              <span class="brand__text">HostUz</span>
+          </a>
+
+         <nav class="nav" aria-label="Asosiy menyu">
+             <a class="nav__link" href="index.html">Bosh sahifa</a>
+             <a class="nav__link" href="pricing.html">Xizmatlar</a>
+             <a class="nav__link" href="contact.html">Bog'lanish</a>
+             <a class="nav__link" href="about.html" aria-current="page">Biz haqimizda</a>
+             <a class="nav__cta" href="order.html">Buyurtma berish</a>
+          </nav>
+     </div>
     </header>
-    <main class="main__content">
-        <section class="about__section container">
-            <h1>Biz haqimizda</h1>
-            <p>HostUz - bu yuqori sifatli hosting, VPS va domen ro'yxatga olish xizmatlarini taqdim etuvchi kompaniya. Bizning missiyamiz mijozlarimizga ishonchli va samarali xizmatlar ko'rsatishdir.</p>
-            <h2>Bizning qadriyatlarimiz</h2>
-            <ul>
-                <li><strong>Ishonchlilik:</strong> Biz mijozlarimizga eng yuqori darajadagi xizmatlarni taqdim etishga intilamiz.</li>
-                <li><strong>Innovatsiya:</strong> Biz doimo yangi texnologiyalarni o'zlashtirib, xizmatlarimizni yaxshilashga harakat qilamiz.</li>
-                <li><strong>Mijozlarga e'tibor:</strong> Mijozlarimizning ehtiyojlarini tushunish va ularga mos echimlar taklif qilish bizning ustuvor vazifamizdir.</li>
-            </ul>
-            <h2>Bizning jamoa</h2>
-            <p>HostUz jamoasi tajribali va malakali mutaxassislardan iborat bo'lib, ular mijozlarimizga eng yaxshi xizmatlarni taqdim etishga bag'ishlangan.</p>
-        </section>
-        <section class="second__content container">
-            <h2>Bizning mijozlarimiz</h2>
-            <p>HostUz butun dunyo bo'ylab minglab mijozlarga xizmat ko'rsatadi. Bizning mijozlarimiz orasida kichik bizneslar, yirik korporatsiyalar va individual foydalanuvchilar mavjud.</p>
-            <h3>Nima uchun HostUz ni tanlash kerak?</h3>
-            <ul>
-                <li>24/7 mijozlarga xizmat ko'rsatish</li>
-                <li>Tez va ishonchli serverlar</li>
-                <li>Raqobatbardosh narxlar</li>
-                <li>Oson foydalanish interfeysi</li>
-            </ul>
-        </section>
-        <section class="testimonials container">
-            <h2>Mijozlarimiz HostUz haqida nima deyishadi?</h2>
-            <div class="testimonials__grid">
-                <article class="testimonial__card">
-                    <img src="assets/brand/JohnDoe.jpg" alt="John Doe rasmi" class="testimonial__image">
-                    <h3>John Doe</h3>
-                    <p>"HostUz bilan ishlash juda yoqimli. Ularning xizmatlari ishonchli va tezkor. Mening veb-saytim hech qachon tushmaydi!"</p>
-                </article>
-                <article class="testimonial__card">
-                    <img src="assets/brand/JanaSmith.jpg" alt="Jane Smith rasmi" class="testimonial__image">
-                    <h3>Jane Smith</h3>
-                    <p>"HostUz jamoasi juda yordamchi va do'stona. Ular har doim mening savollarimga tezda javob berishadi."</p>
-                </article>
-                <article class="testimonial__card">
-                    <img src="assets/brand/AliValiyev.jpg" alt="Ali Valiyev rasmi" class="testimonial__image">
-                    <h3>Ali Valiyev</h3>
-                    <p>"HostUz xizmatlari menga biznesimni onlayn rivojlantirishda katta yordam berdi. Ularning VPS xizmatlari juda moslashuvchan va kuchli."</p>
-                </article>
-            </div>
-        </section>
-        <section class="contact__info container">
-            <h2>Biz bilan bog'laning</h2>
-            <p>Agar sizda savollar bo'lsa yoki qo'shimcha ma'lumot kerak bo'lsa, iltimos, biz bilan bog'laning:</p>
-            <ul>
-                <li>Email: <a href="mailto:info@hostuz.com">info@hostuz.com</a></li>
-                <li>Telefon: +998 71 123 45 67</li>
-                <li>Manzil: Toshkent, O'zbekiston</li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer" role="contentinfo">
-        <div class="footer__content container">
-            <a href="index.html" class="logo__brand" aria-label="HostUz">
-                <span class="logo" aria-hidden="true">HostUz</span>
-            </a>
-            <img src="assets/brand/download.svg" class="logo-brand__image footer__logo" alt="HostUz logotipi">
-            <nav class="footer__links" aria-label="Footer menyu">
-                <a href="index.html">Bosh sahifa</a>
-                <a href="pricing.html">Xizmatlar</a>
-                <a href="contact.html">Bog'lanish</a>
-                <a href="about.html" aria-current="page">Biz haqimizda</a>
-                <a href="order.html">Buyurtma berish</a>
-            </nav>
-            <p>&copy; 2026 HostUz. Barcha huquqlar himoyalangan.</p>
+    <!--/Header bo'limi -->
+    <main id="main">
+      <section class="page-hero">
+      <div class="page-hero__media" aria-hidden="true">
+        <video class="page-hero__bg" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/bg/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="page-hero__overlay"></div>
+      </div>
+
+      <div class="page-hero__content reveal">
+        <p class="kicker">Company</p>
+        <h1 class="page-hero__title">Biz haqimizda</h1>
+        <p class="page-hero__subtitle">HostUz — tez, xavfsiz va barqaror hosting infratuzilmasini taqdim etishga yo'naltirilgan loyiha. (Demo matn.)</p>
+        <div class="page-hero__actions">
+          <a class="btn btn--primary" href="pricing.html"><i class="fa-solid fa-list-check"></i>Narxlar</a>
+          <a class="btn btn--ghost" href="contact.html"><i class="fa-solid fa-headset"></i>Support</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <h2 class="h2">Missiyamiz</h2>
+          <p class="lead">Mahalliy bizneslar va startaplar uchun ishonchli hosting platformasini sodda narxlar bilan taqdim etish.</p>
+
+          <div class="grid grid--2" style="margin-top: 1.2rem;">
+            <article class="card reveal">
+              <div class="card__inner">
+                <h3 class="card__title"><span class="card__icon"><i class="fa-solid fa-bolt"></i></span>Tez ishlash</h3>
+                <p>NVMe, optimallashtirilgan stack va kechikishni kamaytirish.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__inner">
+                <h3 class="card__title"><span class="card__icon"><i class="fa-solid fa-shield-halved"></i></span>Xavfsizlik</h3>
+                <p>SSL, backup va minimal hujum yuzasi — best practices.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__inner">
+                <h3 class="card__title"><span class="card__icon"><i class="fa-solid fa-headset"></i></span>Support</h3>
+                <p>24/7 yordam, migratsiya va sozlash bo'yicha maslahat.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__inner">
+                <h3 class="card__title"><span class="card__icon"><i class="fa-solid fa-chart-line"></i></span>O'sishga tayyor</h3>
+                <p>Shared → VPS → Dedicated ssenariyga mos infratuzilma.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="side reveal">
+          <h3>Ishonch faktlari</h3>
+          <ul>
+            <li>99.9% uptime maqsadi</li>
+            <li>NVMe disklar</li>
+            <li>SSL sertifikat</li>
+            <li>Migratsiya yordami</li>
+          </ul>
+
+          <hr class="hr" style="margin: 1.1rem 0;" />
+
+          <h3>Infratuzilma (demo)</h3>
+          <ul>
+            <li><i class="fa-solid fa-building"></i> Data center: EU / AS</li>
+            <li><i class="fa-solid fa-globe"></i> CDN / DNS</li>
+            <li><i class="fa-solid fa-lock"></i> Backup + monitoring</li>
+          </ul>
+        </aside>
+       </div>
+       </section>
+      <!-- Rekvizitlar bo'limi -->
+      <section class="section section--tight">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="kicker">Huquqiy</span>
+          <h2 class="section__title">Rekvizitlar</h2>
+          <p class="section__lead">Quyidagi ma'lumotlar demo ko'rinishda. Real loyiha uchun kompaniya rekvizitlarini kiriting.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__inner">
+              <h3 class="card__title"><span class="card__icon"><i class="fa-solid fa-file-contract"></i></span>Yuridik nomi</h3>
+              <p>LLC “HostUz” (demo)</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__inner">
+              <h3 class="card__title"><span class="card__icon"><i class="fa-solid fa-id-card"></i></span>STIR / INN</h3>
+              <p>000 000 000 (demo)</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__inner">
+              <h3 class="card__title"><span class="card__icon"><i class="fa-solid fa-location-dot"></i></span>Manzil</h3>
+              <p>Toshkent, Uzbekistan (demo)</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="center reveal" style="margin-top: 1.3rem;">
+          <a class="btn btn--primary" href="contact.html"><i class="fa-solid fa-headset"></i>Biz bilan bog'laning</a>
+        </div>
+      </div>
+      </section>
+    </main>
+    <!-- Footer bo'limi -->
+    <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="HostUz">
+          <img class="brand__logo" src="assets/brand/download.svg" alt="HostUz logotipi" />
+          <span class="brand__text">HostUz</span>
+        </a>
+        <p class="footer__meta">Fast. Secure. Always-on hosting infrastructure.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer menyu">
+        <a href="pricing.html">Narxlar</a>
+        <a href="about.html">Biz haqimizda</a>
+        <a href="contact.html">Bog'lanish</a>
+        <a href="order.html">Buyurtma berish</a>
+      </nav>
+
+      <div class="footer__meta">
+        <p class="footer__copyright">&copy; 2026 HostUz. Barcha huquqlar himoyalangan.</p>
+        <p class="footer__contact">Email: support@hostuz.uz · Telegram: @hostuz</p>
+      </div>
+    </div>
     </footer>
+    <!--/Footer bo'limi -->
 </body>
 </html>

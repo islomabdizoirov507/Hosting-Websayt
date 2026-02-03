@@ -4,77 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HostUz - Buyurtma berish</title>
+    <meta name="description" content="HostUz rasmiy veb-saytiga xush kelibsiz. Yuqori sifatli hosting, VPS va domen ro'yxatga olish xizmatlarini taklif etamiz.">
     <link rel="icon" href="assets/brand/download.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaMxtu1+rA4IB+BZhA3FfRTh3PBFsdxU+qYV+0UjB+vJv39VCArlHw5qYOuVYA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <meta name="description" content="HostUz xizmatlarini buyurtma qiling. Yuqori sifatli hosting, VPS va domen ro'yxatga olish xizmatlaridan foydalaning.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="common_styles.css">
+    <link rel="stylesheet" href="pages_style.css">   
 </head>
 <body>
+    <!-- Header bo'limi -->
     <header class="header" role="banner">
-        <div class="navigatsiya container">
-            <a class="brand" href="index.html" aria-label="HostUz Bosh sahifa">
-                <span class="logo logo-brand" aria-hidden="true">
-                    <img src="assets/brand/download.svg" class="logo-brand__image" alt="HostUz logotipi">
-                </span>
-                <span>HostUz</span>
-            </a>
-            <input type="checkbox" id="menuToggle" aria-label="Menyuni ochish" aria-controls="primary-navigation">
-            <label for="menuToggle" class="menyu" aria-label="Menyuni ochish/yopish">
-                <span></span>
-            </label>
-            <nav class="navigatsiya__links" id="primary-navigation" aria-label="Asosiy menyu">
-                <a href="index.html">Bosh sahifa</a>
-                <a href="pricing.html">Xizmatlar</a>
-                <a href="contact.html">Bog'lanish</a>
-                <a href="about.html">Biz haqimizda</a>
-                <a href="order.html" aria-current="page">Buyurtma berish</a>
-            </nav>
+     <div class="container header__inner">
+          <a class="brand" href="index.html" aria-label="HostUz Bosh sahifa">
+              <img src="assets/brand/download.svg" class="brand__logo" alt="HostUz logotipi" />
+              <span class="brand__text">HostUz</span>
+          </a>
+
+         <nav class="nav" aria-label="Asosiy menyu">
+             <a class="nav__link" href="index.html">Bosh sahifa</a>
+             <a class="nav__link" href="pricing.html">Xizmatlar</a>
+             <a class="nav__link" href="contact.html">Bog'lanish</a>
+             <a class="nav__link" href="about.html">Biz haqimizda</a>
+             <a class="nav__cta" href="order.html" aria-current="page">Buyurtma berish</a>
+          </nav>
+     </div>
+   </header>
+    <!--/Header bo'limi -->
+
+    <!-- Order bo'lim -->
+    <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__media" aria-hidden="true">
+        <video class="page-hero__bg" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/bg/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="page-hero__overlay"></div>
+      </div>
+
+      <div class="page-hero__content reveal">
+        <p class="kicker">2 daqiqada</p>
+        <h1 class="page-hero__title">Buyurtma berish</h1>
+        <p class="page-hero__subtitle">Paketni tanlang va kontakt ma'lumotlaringizni qoldiring. (Demo — yuborish funksiyasi serverga ulanmagan.)</p>
+        <div class="page-hero__actions">
+          <a class="btn btn--ghost" href="pricing.html"><i class="fa-solid fa-list-check"></i>Narxlarni ko'rish</a>
+          <a class="btn btn--primary" href="contact.html"><i class="fa-solid fa-headset"></i>Yordam</a>
         </div>
-    </header>
-    <main class="main__content">
-        <section class="order__section container">
-            <h1>Xizmatlarni buyurtma qiling</h1>
-            <p>Quyidagi shakl orqali HostUz xizmatlarini buyurtma qilishingiz mumkin. Iltimos, kerakli ma'lumotlarni to'ldiring:</p>
-            <form class="order__form" action="#" method="post">
-                <label for="service">Xizmat turi:</label>
-                <select id="service" name="service" required>
-                    <option value="hosting">Hosting</option>
-                    <option value="vps">VPS</option>
-                    <option value="domain">Domen ro'yxatga olish</option>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <div class="container split">
+        <div class="reveal">
+          <h2 class="h2">Buyurtma formasi</h2>
+          <p class="lead">Ma'lumotlarni to'ldiring — biz siz bilan bog'lanamiz.</p>
+
+          <form class="form" action="#" method="post" style="margin-top: 1.2rem;">
+            <div class="grid grid--2">
+              <div class="field">
+                <label class="label" for="fullname">Ism-familiya</label>
+                <input class="control" id="fullname" name="fullname" type="text" placeholder="Masalan: Islom Abdu..." required />
+              </div>
+
+              <div class="field">
+                <label class="label" for="phone">Telefon</label>
+                <input class="control" id="phone" name="phone" type="tel" placeholder="+998 __ ___ __ __" required />
+              </div>
+            </div>
+
+            <div class="grid grid--2">
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <input class="control" id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="field">
+                <label class="label" for="plan">Paket</label>
+                <select class="control" id="plan" name="plan" required>
+                  <option value="" selected disabled>Paketni tanlang</option>
+                  <option>Shared — Starter</option>
+                  <option>Shared — Pro</option>
+                  <option>Shared — Business</option>
+                  <option>VPS — Starter</option>
+                  <option>VPS — Pro</option>
+                  <option>VPS — Premium</option>
+                  <option>Domen — .uz</option>
+                  <option>Domen — .com</option>
                 </select>
-                <label for="name">Ismingiz:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="surname">Familiyangiz:</label>
-                <input type="text" id="surname" name="surname" required>
-                <label for="company">Kompaniya nomi (agar mavjud bo'lsa):</label>
-                <input type="text" id="company" name="company">
-                <label for="phone">Telefon raqamingiz:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <label for="email">Email manzilingiz:</label>
-                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
 
-                <label for="details">Qo'shimcha ma'lumotlar:</label>
-                <textarea id="details" name="details" rows="5"></textarea>
+            <div class="field">
+              <label class="label" for="domain">Domen (ixtiyoriy)</label>
+              <input class="control" id="domain" name="domain" type="text" placeholder="Masalan: mysite.uz" />
+              <p class="help">Agar domeningiz bo'lsa yozing. Bo'lmasa, tanlashda yordam beramiz.</p>
+            </div>
 
-                <button type="submit" class="button__submit">Buyurtma berish</button>
-            </form>
-        </section>
-    </main>
-    <footer class="footer" role="contentinfo">
-        <div class="footer__content container">
-            <a href="index.html" class="logo__brand" aria-label="HostUz">
-                <span class="logo" aria-hidden="true">HostUz</span>
-            </a>
-            <img src="assets/brand/download.svg" class="logo-brand__image footer__logo" alt="HostUz logotipi">
-            <nav class="footer__links" aria-label="Footer menyu">
-                <a href="index.html">Bosh sahifa</a>
-                <a href="pricing.html">Xizmatlar</a>
-                <a href="contact.html">Bog'lanish</a>
-                <a href="about.html">Biz haqimizda</a>
-                <a href="order.html" aria-current="page">Buyurtma berish</a>
-            </nav>
-            <p>&copy; 2026 HostUz. Barcha huquqlar himoyalangan.</p>
+            <div class="field">
+              <label class="label" for="message">Izoh</label>
+              <textarea class="control" id="message" name="message" rows="5" placeholder="Qanday loyiha? Qaysi muddat?"></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">
+              <i class="fa-solid fa-paper-plane"></i>So'rov yuborish
+            </button>
+          </form>
         </div>
-    </footer>
+
+        <aside class="side reveal">
+          <h3>Nega HostUz?</h3>
+          <ul>
+            <li>NVMe disklar va tez ishlash</li>
+            <li>SSL + backup (paketga qarab)</li>
+            <li>99.9% uptime maqsadi</li>
+            <li>24/7 qo'llab-quvvatlash</li>
+          </ul>
+
+          <hr class="hr" style="margin: 1.1rem 0;" />
+
+          <h3>Kontakt</h3>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> support@hostuz.uz</li>
+            <li><i class="fa-brands fa-telegram"></i> @hostuz</li>
+            <li><i class="fa-solid fa-phone"></i> +998 00 000 00 00</li>
+          </ul>
+
+          <p class="help" style="margin-top: .9rem;">Eslatma: Bu demo. Formani backend bilan ulasangiz haqiqiy buyurtmalar qabul qilinadi.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+    <!--/Order bo'lim -->
+
+    <!-- Footer bo'limi -->
+    <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="HostUz">
+          <img class="brand__logo" src="assets/brand/download.svg" alt="HostUz logotipi" />
+          <span class="brand__text">HostUz</span>
+        </a>
+        <p class="footer__meta">Fast. Secure. Always-on hosting infrastructure.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer menyu">
+        <a href="pricing.html">Narxlar</a>
+        <a href="about.html">Biz haqimizda</a>
+        <a href="contact.html">Bog'lanish</a>
+        <a href="order.html">Buyurtma berish</a>
+      </nav>
+
+      <div class="footer__meta">
+        <p class="footer__copyright">&copy; 2026 HostUz. Barcha huquqlar himoyalangan.</p>
+        <p class="footer__contact">Email: support@hostuz.uz · Telegram: @hostuz</p>
+      </div>
+    </div>
+  </footer>
+    <!--/Footer bo'limi -->
 </body>
 </html>
